@@ -3,16 +3,20 @@ package org.lessons.java.shop;
 import java.util.Random;
 
 public class Product {
-
-    int productCode;
+    Random random = new Random();
+    int productCode = random.nextInt(1, 100);
     String productName;
     String productDescription;
     double price;
-    int iva;
+    double iva;
 
-    public void codeGenerator() {
-        Random random = new Random();
-        productCode = random.nextInt(100);
-        System.out.println(productCode);
+    public Product(String productName, String productDescription, double price, double iva){
+        this.productName = productName;
+        this.productDescription = productDescription;
+        this.price = price;
+        this.iva = iva;
     }
+
+
+
 }
