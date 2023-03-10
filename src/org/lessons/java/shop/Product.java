@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class Product {
     Random random = new Random();
-    int productCode = random.nextInt(1, 100);
-    String productName;
-    String productDescription;
-    double price;
-    double iva;
+    private int productCode = random.nextInt(1000, 99990);
+    private String productName;
+    private String productDescription;
+    private double price;
+    private double iva;
 
     public Product(String productName, String productDescription, double price, double iva){
         this.productName = productName;
