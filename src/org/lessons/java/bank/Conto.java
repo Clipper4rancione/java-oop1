@@ -1,5 +1,6 @@
 package org.lessons.java.bank;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Conto {
@@ -30,10 +31,19 @@ public class Conto {
         return balance;
     }
 
-    // SETTER
 
+    // SETTER
 
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
+    // METHODS
+
+    public String formatBalance(){
+        DecimalFormat df = new DecimalFormat("##.##");
+        return df.format(balance);
+    }
+
+
 }
