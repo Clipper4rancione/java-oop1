@@ -3,11 +3,7 @@ package org.lessons.java.shop;
 public class Main {
     public static void main(String[] args) {
 
-        Product firstProduct = new Product();
+        Product firstProduct = new Product("Red Bull", "Energy Drink", 2.00, 0);
 
-        firstProduct.productName = "Mozzarella Di Bufala";
-        firstProduct.productDescription = "Mozzarella fatta con latte 100% di bufala";
-        firstProduct.price = 5.99;
-        firstProduct.codeGenerator();
     }
 }
